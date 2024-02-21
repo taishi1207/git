@@ -8,12 +8,19 @@ public class BMI {
 
         System.out.println("BMIを計算して肥満度を表示します。");
 
-        System.out.print("・身長(m)を入力してください:");
-        double height = stdIn.nextDouble();
-        System.out.print("・体重(kg)を入力してください");
-        double weight = stdIn.nextDouble();
+        System.out.print("一人目の身長(cm)を入力してください:");
+        double height1 = stdIn.nextDouble();
+        System.out.print("一人目の体重(kg)を入力してください");
+        double weight1 = stdIn.nextDouble();
 
-        double bmi = weight / Math.pow(height, 2);
+        double bmi = weight1 / Math.pow(height1, 2);
+
+        System.out.println("二人目の身長(cm)を入力してください。");
+        double height2 = stdIn.nextDouble();
+        System.out.println("二人目の体重(kg)を入力してください。");
+        double weight2 = stdIn.nextDouble();
+
+        double bmi2 = weight2 / Math.pow(height2, 2);
 
         /** 肥満度の判定
          * 18.5未満　低体重(やせ型)
@@ -43,3 +50,4 @@ public class BMI {
         System.out.println("------------------------------------");
     }
 }
+
